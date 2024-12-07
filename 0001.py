@@ -10,10 +10,10 @@ while x < 1000:
         x += 1
     else:
         x +=1
-sum = 0
+total_sum = 0
 for number in eligible:
-    sum = sum + int(number)
+    total_sum = total_sum + number
 
-print(f"{Fore.CYAN}The entire set of multiples of 3 or 5 below 1000 includes:\n{Style.RESET_ALL}" + str(eligible))
-print(f"{Fore.CYAN}The number of elements that meet these qualifications are:\n{Style.RESET_ALL}" + str(len(eligible)))
-print(f"{Fore.CYAN}The sum of all of these elements are:\n{Style.RESET_ALL}" + str(sum))
+print(f"{Fore.CYAN}The entire set of multiples of 3 or 5 below 1000 includes:\n{Style.RESET_ALL}{str(eligible)}")
+print(f"{Fore.CYAN}The number of elements that meet these qualifications are:\n{Style.RESET_ALL}{len(eligible)}")
+print(f"{Fore.CYAN}The sum of all of these elements are:\n{Style.RESET_ALL}{str(total_sum)}")
